@@ -1,0 +1,125 @@
+header {
+  padding: 0 0 2vh 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  position: absolute;
+  top: 15%;
+  /* background: purple; */
+}
+.firstb {
+  display: grid;
+  justify-self: center;
+  color: white;
+  height: 74vh;
+  justify-content: start;
+  align-items: center;
+  /* background: yellow; */
+}
+header menu {
+  height: 40%;
+}
+header menu h1 {
+  margin: 0 0 3vh 0;
+  font-weight: 900;
+  font-size: clamp(42px, 3.4vw, 3.6vw);
+}
+.h-p {
+  font-weight: 200;
+  font-size: clamp(24px, 2.4vw, 2.6vw);
+  margin: 0;
+}
+article {
+  display: flex;
+  width: clamp(300px, 16%, 17%);
+  justify-content: space-between;
+}
+article img {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2%;
+}
+
+/* header section styling */
+header section {
+  display:grid;
+  justify-self: center;
+  width: clamp(400px, 24%, 25%);
+  /* width:24%; */
+  /* background: red; */
+}
+header section img {
+  width: clamp(400px, 24%, 25%);
+}
+section h1 {
+  background: rgba(0, 0, 0, 0.3);
+  width: clamp(400px, 24%, 25%);
+  margin: 0 0 0 0;
+  text-align: center;
+  font-size: clamp(28px, 2.9vw, 3.2vw);
+  color: white;
+  padding: 1vh 0 1vh 0;
+}
+.h-sc {
+  display: grid;
+  width: clamp(400px, 24%, 25%);
+}
+section button {
+  display:grid;
+  margin: 2vh 0 0 0 ;
+  width:40%;
+  justify-self: center;
+  color:white;
+  padding: 3vh 5% 3vh 5%;
+  background:linear-gradient(to bottom, rgb(246,190,106),rgb(245,180,81) );
+  border:none;
+  border-radius:5px;
+}
+section button:hover{
+  background:rgba(245,190,105,0.9)
+}
+
+@media all and (max-width: 990px) {
+  .h-p {
+    font-weight: 200;
+    font-size: 110%;
+    margin: 0;
+  }
+  header {
+    display: block;
+    /* padding: 0 0 0 0;
+    margin: 0; */
+  }
+  .firstb {
+    display: block;
+    padding: 0 0 2vh 0;
+    height: 23vh;
+    margin: 0;
+  }
+  header {
+    padding: 0 0 0 0;
+  }
+  header section {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    display:grid;
+  }
+  header section img,
+  header section h1 {
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  header {
+    top: 10vh;
+  }
+  header section {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+  header section img,
+  header section h1 {
+    width: 100%;
+  }
+}
