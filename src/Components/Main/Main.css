@@ -3,7 +3,7 @@ main {
   padding: 2vh 0 0 0;
   background: rgb(0, 0, 0);
   display: grid;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 .line {
   color: white;
@@ -175,7 +175,7 @@ menu h1 {
   color: rgb(135, 97, 168);
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1036px) {
   header div p {
     line-height: 4vh;
   }
@@ -192,18 +192,18 @@ menu h1 {
     row-gap: 3vh;
   }
   .moreinfo {
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 28% 28%;
     column-gap: 20%;
     row-gap: 4vh;
   }
-  .imginfo{
-    width:90%
+  .imginfo {
+    width: 90%;
   }
 }
 
-
 @media all and (max-width: 500px) {
   .firstdiv {
+    width: 96%;
     grid-template-columns: 100%;
   }
   .articleimg {
@@ -217,15 +217,19 @@ menu h1 {
   .imggallery {
     grid-template-columns: 100%;
     row-gap: 5vh;
+    /* background:red; */
     /* margin: 2vh 0 0 20%; */
   }
-  .workerinfo{
-    width:100%
+  .workerinfo {
+    width: 100%;
+    background: red;
+    padding: 0 0 0 8%;
   }
- 
-   .moreinfo {
-     width:100%;
-     overflow-x:hidden;
+
+  .moreinfo {
+    width: 100%;
+    background: violet;
+    /* overflow-x:hidden; */
     grid-template-columns: 26% 26%;
   }
 }
