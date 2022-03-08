@@ -9,10 +9,12 @@ import trillus from "../images/tr-illus.jpg";
 import stillus from "../images/st-illus.jpg";
 import ftillus from "../images/ft-ilus.jpg";
 import lillus from "../images/1.webp";
-
-
-
-
+import ylot from "../images/y-lot.jpg";
+import pinklot from "../images/pink-lot.png";
+import lglot from "../images/lg-lot.jpg";
+import glot from "../images/g-lot.jpg";
+import blot from "../images/b-lot.png";
+import dbimg from "../images/db-img.png";
 
 const Main = () => {
   return (
@@ -81,8 +83,8 @@ const Main = () => {
         </div>
       </section>
 
-      {/* <article>
-        <div>
+      <article>
+        <div className="articlediv1">
           <h1>Plant a Tree With Every NFT Sale or Resell</h1>
           <p>
             Beyond creating an amazing community within the Metaverse,our goal
@@ -92,12 +94,155 @@ const Main = () => {
           </p>
         </div>
         <div className="articleimg">
-          <img src={lillus} alt="trees" />
-          <img src={ftillus} alt="trees" />
-          <img src={stillus} alt="trees" />
-          <img src={trillus} alt="trees" />
+          <img src={lillus} alt="trees" className="imgtree" />
+          <img src={ftillus} alt="trees" className="imgtree" />
+          <img src={stillus} alt="trees" className="imgtree" />
+          <img src={trillus} alt="trees" className="imgtree" />
         </div>
-      </article> */}
+      </article>
+
+      <menu>
+        <div>
+          <h6>OUR JOURNEY</h6>
+          <h1>Road Map</h1>
+        </div>
+        <div className="phasecon">
+          <div className="eachcon">
+            <h5>Phase1</h5>
+            {/* <img src="" alt="al"/>
+            <hr className="rope2" /> */}
+            <p>
+              We give our Bear Bums a home in the form of our Website and social
+              channel launches. The bears are then revealed, and two are even
+              given new homes, as we begin to build awareness of this bear army.
+            </p>
+          </div>
+
+          <div className="eachcon">
+            <h5>Phase2</h5>
+            {/* <img src="" alt="al" />
+            <hr className="rope2" /> */}
+            <p>
+              Five more bears are adopted while the rest get ready to party on
+              Opensea. To celebrate, we begin rebuilding the bear’s natural
+              habitat by planting a tree for every bear sold or resold for the
+              entirety of their existence! Our goal is to plant 1,000,000+
+              trees! The first press release on the Bear Bums hits the NFT
+              media, and the community goes wild when we do a surprise air drop
+              of a rare bear…
+            </p>
+          </div>
+
+          <div className="eachcon">
+            <h5>Phase3</h5>
+            {/* <img src="" alt="al" />
+            <hr className="rope2" /> */}
+            <p>
+              It’s time for the rare bears to stop being so shy and reveal
+              themselves! The community gets to meet these creatures that have
+              been hiding, and find them now on Opensea. We introdce our Honey
+              Points and its incentives to the community. Sold over 2,000 Bears
+              and we begin planting trees right away!
+            </p>
+          </div>
+
+          <div className="eachcon">
+            <h5>Phase4</h5>
+            {/* <img src="" alt="al" />
+            <hr className="rope2" /> */}
+            <p>
+              The Bear Bums wake their community out of hibernation by dropping
+              some major bombs. Details of their animated series come to light,
+              and a major announcement is made. From this point on there will be
+              heavy rewards and community incentives. You may actually get tired
+              of how much we give to you guys.
+            </p>
+          </div>
+
+          <div className="eachcon">
+            <h5>Phase5</h5>
+            {/* <img src="" alt="al" />
+            <hr className="rope2" /> */}
+            <p>
+              Huge giveaways, announcements, partnerships, and more are all in
+              the works as the Bear Bums begin teasing the release of their
+              short mini bear comics
+            </p>
+          </div>
+
+          <div className="eachcon">
+            <h5>Phase6</h5>
+            {/* <img src="" alt="al" />
+            <hr className="rope2" /> */}
+            <p>
+              The next generation of bear bums begin...just wait and see what we
+              have in store with our very own companion collection.... The Retro
+              Pawz!!!
+            </p>
+          </div>
+        </div>
+
+        <div className="imggallery">
+          <img src={ylot} alt="" />
+          <img src={pinklot} alt="" />
+          <img src={glot} alt="" />
+          <img src={lglot} alt="" />
+          <img src={blot} alt="" />
+          <img src={dbimg} alt="" />
+        </div>
+      </menu>
+
+      <div className="workerinfo">
+        <h6>OUR BRAIN</h6>
+        <h1 className="infoh1">THE REAL BEAR BUMS</h1>
+
+        <div className="moreinfo">
+          <div className="more2">
+            <img src={lglot} alt="" className="imginfo" />
+            <div>
+              <h2 className="marg">@maximustudios</h2>
+              <p className="parg">Artist & Founder</p>
+              <div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="more2">
+            <img src={glot} alt="" className="imginfo" />
+            <div>
+              <h2 className="marg">@mamabear</h2>
+              <p className="parg">NFT Marketer</p>
+              <div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="more2">
+            <img src={pinklot} alt="" className="imginfo" />
+            <div>
+              <h2 className="marg">@dizzybiz</h2>
+              <p className="parg">Crypto Guru</p>
+              <div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="more2">
+            <img src={ylot} alt="" className="imginfo" />
+            <div>
+              <h2 className="marg">@thebearedbear</h2>
+              <p className="parg">Community Manager</p>
+              <div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
