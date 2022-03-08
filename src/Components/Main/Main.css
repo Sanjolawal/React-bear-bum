@@ -14,13 +14,13 @@ main header {
   display: grid;
   width: 80%;
   justify-self: center;
-  grid-template-columns: repeat(auto-fit, clamp(360px, 50%, 52%) );
-  justify-content:center;
+  grid-template-columns: repeat(auto-fit, clamp(360px, 50%, 52%));
+  justify-content: center;
 }
-main header img {
+header img {
   width: 96%;
   border-radius: 8px;
-  align-self:center;
+  align-self: center;
 }
 header div h1 {
   text-align: center;
@@ -30,11 +30,29 @@ header div h1 {
 header div p {
   text-align: start;
   font-size: clamp(18px, 1.6vw, 1.8vw);
-  line-height:6vh;
+  /* line-height: 6vh; */
+}
+
+main section {
+  color: white;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  width: 80%;
+  background: red;
+  margin: 2vh 0 5vh 0;
+}
+section h6,
+section h1, section p {
+  text-align: center;
+  margin:0 0 2vh 0;
+}
+section h6{
+    color: rgb(135,97,168);
 }
 
 @media all and (max-width: 900px) {
-  header div p{
-      line-height:4vh;
+  header div p {
+    line-height: 4vh;
   }
 }
