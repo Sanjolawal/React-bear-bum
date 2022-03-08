@@ -5,6 +5,13 @@ import Dillus from "../images/D-illus.jpg";
 import eillus from "../images/e-illus.jpg";
 import fillus from "../images/f-illus.jpg";
 import willus from "../images/w-illus.jpg";
+import trillus from "../images/tr-illus.jpg";
+import stillus from "../images/st-illus.jpg";
+import ftillus from "../images/ft-ilus.jpg";
+import lillus from "../images/1.webp";
+
+
+
 
 
 const Main = () => {
@@ -31,7 +38,7 @@ const Main = () => {
       <section>
         <h6>PERKS</h6>
         <h1>Welcome To The Crew</h1>
-        <div className='firstdiv'>
+        <div className="firstdiv">
           <div className="sectiondiv">
             <img src={Dillus} alt="llus" />
             <h3>Exclusivity</h3>
@@ -42,7 +49,7 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={fillus } alt="illus" />
+            <img src={fillus} alt="illus" />
             <h3>Full Transparency</h3>
             <p>
               We believe in complete ownership and fair distribution within our
@@ -73,6 +80,24 @@ const Main = () => {
           </div>
         </div>
       </section>
+
+      {/* <article>
+        <div>
+          <h1>Plant a Tree With Every NFT Sale or Resell</h1>
+          <p>
+            Beyond creating an amazing community within the Metaverse,our goal
+            is to cultivate envionrmental impact and awareness. We want to make
+            it a goal to plant 10s if not 100s of thousands of trees around the
+            world and give our bears their home back!
+          </p>
+        </div>
+        <div className="articleimg">
+          <img src={lillus} alt="trees" />
+          <img src={ftillus} alt="trees" />
+          <img src={stillus} alt="trees" />
+          <img src={trillus} alt="trees" />
+        </div>
+      </article> */}
     </main>
   );
 };
