@@ -222,13 +222,13 @@ menu h1 {
   }
   .workerinfo {
     width: 100%;
-    background: red;
+    /* background: red; */
     padding: 0 0 0 8%;
   }
 
   .moreinfo {
     width: 100%;
-    background: violet;
+    /* background: violet; */
     /* overflow-x:hidden; */
     grid-template-columns: 26% 26%;
   }

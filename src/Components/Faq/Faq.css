@@ -1,0 +1,54 @@
+.faq {
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 10vh 0 0 0;
+  display: grid;
+  /* background: red; */
+  justify-items: center;
+}
+.faq1 {
+  /* display:flex; */
+  /* background: white; */
+  color: black;
+  font-size: clamp(18px, 1.5vw, 2vw);
+  padding: 0 2% 0 2%;
+  width: 50%;
+}
+.faq2 {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  background: white;
+  margin: 5vh 0 0 0;
+  padding: 0 10% 0 10%;
+  border-radius: 50px;
+}
+
+p:hover {
+  color: blue;
+}
+.logo2 {
+  opacity: 0.6;
+  font-size: clamp(16.5px, 1.3vw, 1.2vw);
+  margin: 0 0% 2vh 0%;
+  display:none;
+}
+.turn {
+  transform: scaleY(1);
+  display: grid;
+  align-self: center;
+}
+.turn2 {
+  transform: scaleY(1);
+}
+
+@media all and (max-width: 1036px) {
+  .faq1 {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .faq1 {
+    width: 94%;
+  }
+}

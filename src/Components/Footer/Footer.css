@@ -1,0 +1,9 @@
+footer{
+    margin:0;
+    padding: 4vh 0 0 0;
+    display:grid;
+    background:red;
+    width:60%;
+    grid-template-colums: 20% 40% 20% 20%;
+    justify-self:center;
+}
