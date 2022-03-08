@@ -1,12 +1,12 @@
-header {
+  header {
   padding: 0 0 2vh 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr 1fr);
   position: absolute;
-  top: 15%;
-  /* background: purple; */
-}
-.firstb {
+  top: 0%;  
+} 
+
+ .firstb {
   display: grid;
   justify-self: center;
   color: white;
@@ -39,15 +39,16 @@ article img {
   padding: 2%;
 }
 
-/* header section styling */
-header section {
+ /* header section styling  */
+
+ header section {
   display:grid;
   justify-self: center;
   width: clamp(400px, 24%, 25%);
   /* width:24%; */
-  /* background: red; */
+   /* background: red;  */
 }
-header section img {
+ header section img {
   width: clamp(400px, 24%, 25%);
 }
 section h1 {
@@ -65,7 +66,7 @@ section h1 {
 }
 section button {
   display:grid;
-  margin: 2vh 0 0 0 ;
+  margin: 5vh 0 0 0 ;
   width:40%;
   justify-self: center;
   color:white;
@@ -76,9 +77,9 @@ section button {
 }
 section button:hover{
   background:rgba(245,190,105,0.9)
-}
+} 
 
-@media all and (max-width: 990px) {
+ @media all and (max-width: 990px) {
   .h-p {
     font-weight: 200;
     font-size: 110%;
@@ -88,7 +89,7 @@ section button:hover{
     display: block;
     /* padding: 0 0 0 0;
     margin: 0; */
-  }
+   }
   .firstb {
     display: block;
     padding: 0 0 2vh 0;
@@ -114,7 +115,7 @@ section button:hover{
   header {
     top: 10vh;
   }
-  header section {
+   header section {
     width: 90%;
     margin: 0 5% 0 5%;
   }
@@ -122,4 +123,4 @@ section button:hover{
   header section h1 {
     width: 100%;
   }
-}
+} 

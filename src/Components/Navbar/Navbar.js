@@ -2,14 +2,15 @@ import React from "react";
 import logo from "../images/logo.png";
 import "./Navbar.css";
 
+
 const Navbar = () => {
   return (
     <nav>
-      <div>
-        <img src={logo} alt="logo" />
+      <div className="div">
+        <img src={logo} alt="logo" className="img" />
         <h1>THE BEAR BUMS</h1>
       </div>
-      <ul>
+      <ul className="ul">
         <li>About</li>
         <li>Specs</li>
         <li>Roadmap</li>

@@ -1,0 +1,40 @@
+main {
+  margin: 0;
+  padding: 2vh 0 0 0;
+  background: rgb(0, 0, 0);
+  display: grid;
+}
+.line {
+  color: white;
+  width: 70%;
+  /* text-align:center; */
+}
+main header {
+  color: white;
+  display: grid;
+  width: 80%;
+  justify-self: center;
+  grid-template-columns: repeat(auto-fit, clamp(360px, 50%, 52%) );
+  justify-content:center;
+}
+main header img {
+  width: 96%;
+  border-radius: 8px;
+  align-self:center;
+}
+header div h1 {
+  text-align: center;
+  font-size: clamp(34px, 3.6vw, 3.8vw);
+}
+
+header div p {
+  text-align: start;
+  font-size: clamp(18px, 1.6vw, 1.8vw);
+  line-height:6vh;
+}
+
+@media all and (max-width: 900px) {
+  header div p{
+      line-height:4vh;
+  }
+}
