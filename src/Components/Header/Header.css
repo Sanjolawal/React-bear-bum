@@ -38,7 +38,7 @@
   padding: 25% 0 0 0;
 }
 .headh1 {
-  font-size: clamp(44px, 3.9vw, 4vw);
+  font-size: clamp(40px, 3.6vw, 4vw);
   margin: 0 0 8vh 0;
   line-height: 7vh;
 }
@@ -67,11 +67,12 @@
   /* background: pink; */
 }
 .head12 {
-  font-size: clamp(30px, 2.8vw, 3vw);
+  font-size: clamp(26px, 2.8vw, 3vw);
   text-align: center;
   background: rgb(0, 0, 0, 0.6);
   margin: 0;
   padding: 2vh 0 2vh 0;
+  width:100%
 }
 
 .himgcol {
@@ -91,4 +92,75 @@
 }
 .headbtn:hover {
   background: rgb(245, 183, 90);
+}
+
+@media all and (max-width:1036px){
+ .header{
+    display:block;
+    /* background:red; */
+    height:165vh;
+  }
+  .firstb{
+    display:block;
+    padding: 0 0 0 10%;
+    /* background:red; */
+  }
+  .mainhcon{
+    display:block;
+    /* background:purple; */
+    width:100%;
+  }
+  .himgcol{
+    /* background:violet; */
+  }
+  #smicolon2{
+    margin:0 3vw 0 0;
+  }
+  .secondb2{
+    width:66%;
+  }
+}
+
+@media all and (max-width:900px){
+  .header{
+    height:160vh;
+  }
+  .secondb2{
+    width:80%;
+  }
+}
+
+@media all and (max-width:600px){
+  .header{
+    height:140vh;
+  }
+  .secondb2{
+    width:82%;
+  }
+}
+
+@media all and (max-width:500px){
+  .header{
+    display:block;
+    /* background:red; */
+    height:120vh;
+  }
+  .firstb{
+    display:block;
+    padding: 0 0 0 4%;
+  }
+  .mainhcon{
+    display:block;
+    /* background:purple; */
+    width:100%;
+  }
+  .himgcol{
+    /* background:violet; */
+  }
+  #smicolon2{
+    margin:0 3vw 0 0;
+  }
+  .secondb2{
+    width:94%;
+  }
 }

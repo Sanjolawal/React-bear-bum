@@ -41,7 +41,7 @@ const Main = () => {
         <h1>Welcome To The Crew</h1>
         <div className="firstdiv">
           <div className="sectiondiv">
-            <img src={Dillus} alt="llus" />
+            <img src={Dillus} alt="llus" className="imgillus" />
             <h3>Exclusivity</h3>
             <p>
               The Bear Bums offers an exclusive 10,000 NFT collection that
@@ -50,7 +50,7 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={fillus} alt="illus" />
+            <img src={fillus} alt="illus" className="imgillus" />
             <h3>Full Transparency</h3>
             <p>
               We believe in complete ownership and fair distribution within our
@@ -59,7 +59,7 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={eillus} alt="illus" />
+            <img src={eillus} alt="illus" className="imgillus" />
             <h3>Tight-knit Community</h3>
             <p>
               Become part of an amazing community that encourages love for one
@@ -69,7 +69,7 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={willus} alt="illus" />
+            <img src={willus} alt="illus" className="imgillus" />
             <h3>Rewards</h3>
             <p>
               As the project continues to grow, so do the perks and rewards
@@ -242,8 +242,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-
-      
     </main>
   );
 };

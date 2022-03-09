@@ -75,7 +75,9 @@ h6 {
   justify-items: center;
   /* background:yellow; */
 }
-
+.imgillus{
+  margin:0;
+}
 article {
   color: white;
   width: 100%;
@@ -169,10 +171,13 @@ menu h1 {
 }
 .marg {
   margin: 0 0 -1.6vh 0;
-  font-size: clamp(12px, 1.2vw, 1.6vw);
+  font-size: clamp(16px, 1.2vw, 1.6vw);
+
 }
 .parg {
   color: rgb(135, 97, 168);
+  font-size: clamp(11.5px, 1.2vw, 1.6vw);
+
 }
 
 @media all and (max-width: 1036px) {
