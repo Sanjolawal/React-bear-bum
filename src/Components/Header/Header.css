@@ -52,7 +52,7 @@
 #smicolon2 {
   width: 5.5%;
   margin: 0 0.8vw 0 0;
-  padding:1vh;
+  padding: 1vh;
 }
 
 .secondb {
@@ -72,7 +72,7 @@
   background: rgb(0, 0, 0, 0.6);
   margin: 0;
   padding: 2vh 0 2vh 0;
-  width:100%
+  width: 100%;
 }
 
 .himgcol {
@@ -82,7 +82,7 @@
   width: 100%;
 }
 .headbtn {
-  padding: 2vh 2vw 2vh 2vw;
+  padding: 3vh 3vw 3vh 3vw;
   margin: 6vh 0 0 0;
   border-radius: 8px;
   border: none;
@@ -94,30 +94,35 @@
   background: rgb(245, 183, 90);
 }
 
-@media all and (max-width:1036px){
- .header{
-    display:block;
+@media all and (max-width: 1036px) {
+  .header {
+    display: block;
     /* background:red; */
-    height:100vh;
+    height: 94vh;
   }
-  .firstb{
-    display:block;
+  .firstb {
+    display: block;
     padding: 0 0 0 10%;
     /* background:red; */
   }
-  .mainhcon{
-    display:block;
+  .mainhcon {
+    display: block;
     /* background:purple; */
-    width:100%;
+    width: 100%;
   }
-  .himgcol{
+  .headh1 {
+    font-size: 5vw;
+    margin: 0 0 2vh 0;
+    line-height: 4vh;
+  }
+  .himgcol {
     /* background:violet; */
   }
-  #smicolon2{
-    margin:0 3vw 0 0;
+  #smicolon2 {
+    margin: 0 3vw 0 0;
   }
-  .secondb2{
-    width:86%;
+  .secondb2 {
+    width: 86%;
   }
 }
 
@@ -139,28 +144,33 @@
   }
 } */
 
-@media all and (max-width:500px){
-  .header{
-    display:block;
+@media all and (max-width: 500px) {
+  .header {
+    display: block;
     /* background:red; */
-    height:120vh;
+    height: 96vh;
   }
-  .firstb{
-    display:block;
+  .firstb {
+    display: block;
     padding: 0 0 0 4%;
   }
-  .mainhcon{
-    display:block;
+  .mainhcon {
+    display: block;
     /* background:purple; */
-    width:100%;
+    width: 100%;
   }
-  .himgcol{
+  .headh1 {
+    font-size: clamp(40px, 3.6vw, 4vw);
+    margin: 0 0 3vh 0;
+    line-height: 6vh;
+  }
+  .himgcol {
     /* background:violet; */
   }
-  #smicolon2{
-    margin:0 3vw 0 0;
+  #smicolon2 {
+    margin: 0 3vw 0 0;
   }
-  .secondb2{
-    width:94%;
+  .secondb2 {
+    width: 94%;
   }
 }
