@@ -2,7 +2,7 @@
   background: url("../images/background.gif");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: grid;
   justify-items: center;
   width: 100%;
@@ -40,20 +40,21 @@
 .headh1 {
   font-size: clamp(44px, 3.9vw, 4vw);
   margin: 0 0 8vh 0;
-  padding:0;
+  line-height: 7vh;
 }
 .h-p {
   font-weight: 100;
   font-size: clamp(30px, 2.8vw, 3vw);
   margin: 0vh 0 0vh 0;
-  padding:0;
+  padding: 0;
 }
-
 
 #smicolon2 {
-  width: 10%;
+  width: 5.5%;
   margin: 0 0.8vw 0 0;
+  padding:1vh;
 }
+
 .secondb {
   /* background: green; */
   display: grid;
