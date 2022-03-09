@@ -34,13 +34,16 @@ h2{
   margin: 0 0% 2vh 0%;
   display:none;
 }
+.logo21{
+  display:block;
+}
 .turn {
   transform: scaleY(1);
   display: grid;
   align-self: center;
 }
 .turn2 {
-  transform: scaleY(1);
+  transform: scaleY(-1);
 }
 
 @media all and (max-width: 1036px) {

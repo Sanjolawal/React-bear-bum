@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
+// import ReactDOM from "react-dom";
 import "./Faq.css";
 import downicon from "../images/down-icon.jpg";
 
 const Faq = () => {
+  let turn2 = useRef();
+  let show2 = useRef();
+
+ let toggle2 = () => {
+   turn2.current.classList.toggle("turn2");
+   show2.current.classList.toggle("logo21");
+ };
+
+  let turn = useRef();
+  let show = useRef();
+
+  let toggle = () => {
+    turn.current.classList.toggle("turn2");
+    show.current.classList.toggle("logo21");
+  };
+
+  let turn1 = useRef();
+  let show1 = useRef();
+
+  let toggle1 = () => {
+    turn1.current.classList.toggle("turn2");
+    show1.current.classList.toggle("logo21");
+  };
+
+  let turn3 = useRef();
+  let show3 = useRef();
+
+ let toggle3 = () => {
+   turn3.current.classList.toggle("turn2");
+   show3.current.classList.toggle("logo21");
+ };
+
+  let turn4 = useRef();
+  let show4 = useRef();
+
+ let toggle4 = () => {
+   turn4.current.classList.toggle("turn2");
+   show4.current.classList.toggle("logo21");
+ };
+
   return (
     <div className="faq">
       <h6>FAQ</h6>
@@ -10,8 +51,14 @@ const Faq = () => {
       <div className="faq1">
         <div className="faq2">
           <p className="p">What are the bear bums?</p>
-          <img src={downicon} alt="" className="turn" />
-          <span className="logo2">
+          <img
+            src={downicon}
+            alt=""
+            className="turn"
+            ref={turn2}
+            onClick={toggle2}
+          ></img>
+          <span className="logo2" ref={show2}>
             The Bear Bums, are a collection of 10,000 characters algorithmically
             generated. They are a collection of bear characters with 300+
             different personality traits, accessories, and even animations. We
@@ -23,8 +70,14 @@ const Faq = () => {
         </div>
         <div className="faq2">
           <p className="p">What's their story?</p>
-          <img src={downicon} alt="" className="turn" />
-          <span className="logo2">
+          <img
+            src={downicon}
+            alt=""
+            className="turn"
+            ref={turn}
+            onClick={toggle}
+          />
+          <span className="logo2" ref={show}>
             The Bear Bums overall will become a foundational community within
             the blockchain itself. Although they are an NFT collectible, these
             bears have a story behind them unlike any other. These bears and
@@ -66,8 +119,14 @@ const Faq = () => {
         </div>
         <div className="faq2">
           <p className="p">How much are they?</p>
-          <img src={downicon} alt="" className="turn" />
-          <span className="logo2">
+          <img
+            src={downicon}
+            alt=""
+            className="turn"
+            ref={turn1}
+            onClick={toggle1}
+          />
+          <span className="logo2" ref={show1}>
             This collectible prides itself in fair distribution and giving
             everyone and anyone the possibility to be part of this
             membership/world. The initial launch price will start at 0.08 ETH
@@ -75,16 +134,28 @@ const Faq = () => {
         </div>
         <div className="faq2">
           <p className="p">How do i buy a bear bums?</p>
-          <img src={downicon} alt="" className="turn" />
-          <span className="logo2">
+          <img
+            src={downicon}
+            alt=""
+            className="turn"
+            ref={turn3}
+            onClick={toggle3}
+          />
+          <span className="logo2" ref={show3}>
             You can buy a Bear Bum, either through connecting your wallet to our
             website or purchasing them on opensea.
           </span>
         </div>
         <div className="faq2">
           <p className="p">Why should i join the bear bums community?</p>
-          <img src={downicon} alt="" className="turn" />
-          <span className="logo2">
+          <img
+            src={downicon}
+            alt=""
+            className="turn"
+            ref={turn4}
+            onClick={toggle4}
+          />
+          <span className="logo2" ref={show4}>
             Members that hold any Bear Bums NFT will have exclusive access to
             all of the wonderful things we have planned throughout our roadmap.{" "}
           </span>

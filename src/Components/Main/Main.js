@@ -15,7 +15,6 @@ import lglot from "../images/lg-lot.jpg";
 import glot from "../images/g-lot.jpg";
 import blot from "../images/b-lot.png";
 import dbimg from "../images/db-img.png";
-
 const Main = () => {
   return (
     <main>

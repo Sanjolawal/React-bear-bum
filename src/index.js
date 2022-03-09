@@ -2,16 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-// import Navbar from './Components/Navbar/Navbar';
-// import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+import Header from './Components/Header/Header';
 import Main from "./Components/Main/Main";
 import Faq from "./Components/Faq/Faq";
 import Footer from "./Components/Footer/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Navbar />
-    <Header /> */}
+    <Navbar />
+    <Header /> 
     <Main />
     <Faq />
     <Footer />

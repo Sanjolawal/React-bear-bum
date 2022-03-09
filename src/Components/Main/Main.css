@@ -94,7 +94,7 @@ article h1 {
 }
 .articleimg {
   width: 80%;
-  background: purple;
+  /* background: purple; */
   display: grid;
   justify-content: center;
   grid-template-columns: 23% 22% 23% 23%;
