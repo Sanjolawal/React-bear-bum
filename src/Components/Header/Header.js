@@ -9,29 +9,58 @@ import discord from "../images/discord.png";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="firstb">
-        <menu>
-          <h1>
-            WELCOME TO <br /> <span className="h-p">THE BEAR BUMS</span>
-          </h1>
-          <article>
-            <img src={youtube} alt="icons"></img>
-            <img src={instagram} alt="icons"></img>
-            <img src={twitter} alt="icons"></img>
-            <img src={medium} alt="icons"></img>
-            <img src={discord} alt="icons"></img>
-          </article>
-        </menu>
-      </div>
-      <section>
-        <h1>Join The Bear Bums Family</h1>
-        <img src={Hillus} alt="puppy" />
-        <div className="h-sc">
-          <button>Mint Your Bear Now</button>
+    <div className="header">
+      <div className="mainhcon">
+        <div className="firstb">
+          <div className="cntdiv">
+            <h4 className="headh1">
+              WELCOME TO <br /> <span className="h-p">THE BEAR BUMS</span>
+            </h4>
+            <div className="himgcol">
+              <img
+                src={youtube}
+                alt="icons"
+                className="smicons"
+                id="smicolon2"
+              ></img>
+              <img
+                src={instagram}
+                alt="icons"
+                className="smicons"
+                id="smicolon2"
+              ></img>
+              <img
+                src={twitter}
+                alt="icons"
+                className="smicons"
+                id="smicolon2"
+              ></img>
+              <img
+                src={medium}
+                alt="icons"
+                className="smicons"
+                id="smicolon2"
+              ></img>
+              <img
+                src={discord}
+                alt="icons"
+                className="smicons"
+                id="smicolon2"
+              ></img>
+            </div>
+          </div>
         </div>
-      </section>
-    </header>
+        <div className="secondb">
+          <div className="secondb2">
+            <h1 className="head12">Join The Bear Bums Family</h1>
+            <img src={Hillus} alt="puppy" className="puppyimg" />
+            <div className="h-sc">
+              <button className="headbtn">Mint Your Bear Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

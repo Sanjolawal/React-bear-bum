@@ -33,7 +33,9 @@ footer {
 .smicons {
   border: 1px solid white;
   border-radius: 50%;
+  border: 2px solid white;
   margin: 0 2vw 0 0;
+  padding:0.4vh;
   width: 20%;
 }
 .imgid {

@@ -1,3 +1,93 @@
-.header{
-  background:red;
+.header {
+  background: url("../images/background.gif");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  /* position:relative; */
+  /* position: absolute;
+  top: 0%;*/
+  height: 100vh;
+  padding: 0 0 8vh 0;
+  color: white;
+}
+.mainhcon {
+  /* background: purple; */
+  display: grid;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 40% 40%;
+  column-gap: 20%;
+  height: 60%;
+  align-self: center;
+}
+.firstb {
+  /* background: yellow; */
+  /* padding: 0 0 0 3vw; */
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+.cntdiv {
+  /* background: brown; */
+  width: 80%;
+  height: 30%;
+  padding: 25% 0 0 0;
+}
+.headh1 {
+  font-size: clamp(44px, 3.9vw, 4vw);
+  margin: 0 0 8vh 0;
+  padding:0;
+}
+.h-p {
+  font-weight: 100;
+  font-size: clamp(30px, 2.8vw, 3vw);
+  margin: 0vh 0 0vh 0;
+  padding:0;
+}
+
+
+#smicolon2 {
+  width: 10%;
+  margin: 0 0.8vw 0 0;
+}
+.secondb {
+  /* background: green; */
+  display: grid;
+  justify-items: center;
+}
+.secondb2 {
+  width: 80%;
+  display: grid;
+  justify-items: center;
+  /* background: pink; */
+}
+.head12 {
+  font-size: clamp(30px, 2.8vw, 3vw);
+  text-align: center;
+  background: rgb(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 2vh 0 2vh 0;
+}
+
+.himgcol {
+  margin: 0;
+}
+.puppyimg {
+  width: 100%;
+}
+.headbtn {
+  padding: 2vh 2vw 2vh 2vw;
+  margin: 6vh 0 0 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: rgb(247, 190, 104);
+  color: white;
+}
+.headbtn:hover {
+  background: rgb(245, 183, 90);
 }
