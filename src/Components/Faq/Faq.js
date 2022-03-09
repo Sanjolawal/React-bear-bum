@@ -6,10 +6,10 @@ const Faq = () => {
   return (
     <div className="faq">
       <h6>FAQ</h6>
-      <h1>Frequency Asked Questions</h1>
+      <h2>Frequency Asked Questions</h2>
       <div className="faq1">
         <div className="faq2">
-          <p>What are the bear bums?</p>
+          <p className="p">What are the bear bums?</p>
           <img src={downicon} alt="" className="turn" />
           <span className="logo2">
             The Bear Bums, are a collection of 10,000 characters algorithmically
@@ -22,7 +22,7 @@ const Faq = () => {
           </span>
         </div>
         <div className="faq2">
-          <p>What's their story?</p>
+          <p className="p">What's their story?</p>
           <img src={downicon} alt="" className="turn" />
           <span className="logo2">
             The Bear Bums overall will become a foundational community within
@@ -65,7 +65,7 @@ const Faq = () => {
           </span>
         </div>
         <div className="faq2">
-          <p>How much are they?</p>
+          <p className="p">How much are they?</p>
           <img src={downicon} alt="" className="turn" />
           <span className="logo2">
             This collectible prides itself in fair distribution and giving
@@ -74,7 +74,7 @@ const Faq = () => {
           </span>
         </div>
         <div className="faq2">
-          <p>How do i buy a bear bums?</p>
+          <p className="p">How do i buy a bear bums?</p>
           <img src={downicon} alt="" className="turn" />
           <span className="logo2">
             You can buy a Bear Bum, either through connecting your wallet to our
@@ -82,7 +82,7 @@ const Faq = () => {
           </span>
         </div>
         <div className="faq2">
-          <p>Why should i join the bear bums community?</p>
+          <p className="p">Why should i join the bear bums community?</p>
           <img src={downicon} alt="" className="turn" />
           <span className="logo2">
             Members that hold any Bear Bums NFT will have exclusive access to

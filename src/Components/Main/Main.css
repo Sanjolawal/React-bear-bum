@@ -176,9 +176,9 @@ menu h1 {
 }
 
 @media all and (max-width: 1036px) {
-  header div p {
+  /* header div p {
     line-height: 4vh;
-  }
+  } */
   .firstdiv {
     grid-template-columns: 48% 48%;
   }
