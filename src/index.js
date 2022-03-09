@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
+    {/* <Navbar /> */}
     <Header /> 
     <Main />
     <Faq />
