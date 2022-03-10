@@ -110,10 +110,10 @@
     /* background:purple; */
     width: 100%;
   }
-  .headh1 {
+  .headh1,.h-p {
     font-size: 10vw;
-    margin: 0 0 2vh 0;
-    line-height: 1vh;
+    margin: 0 0 4vh 0;
+    line-height: 2vh;
   }
   .himgcol {
     /* background:violet; */
@@ -130,12 +130,17 @@
   }
 }
 
-/* @media all and (max-width:900px){
+@media all and (max-width:900px){
   .header{
-    height:160vh;
+    height:156vh;
   }
   .secondb2{
-    width:80%;
+    width:70%;
+  }
+  .headh1,.h-p {
+    font-size: 8vw;
+    margin: 0 0 4vh 0;
+    line-height: 6vh;
   }
 }
 
@@ -146,7 +151,7 @@
   .secondb2{
     width:82%;
   }
-} */
+}
 
 @media all and (max-width: 500px) {
   .header {

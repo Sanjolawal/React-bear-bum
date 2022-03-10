@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../images/logo.png";
 import "./Navbar.css";
+import menubar from "../images/menu-bar.svg";
+import closebtn from "../images/close-btn.svg";
+
 
 
 const Navbar = () => {
@@ -18,6 +21,8 @@ const Navbar = () => {
           <li>Team</li>
           <li>FAQ</li>
         </ul>
+        <img src={menubar} alt=""   className="menu1" />
+        <img src={closebtn} alt=""  className="menu2" />
       </div>
     </nav>
   );
