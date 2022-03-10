@@ -98,7 +98,7 @@
   .header {
     display: block;
     /* background:red; */
-    height: 84vh;
+    height: 80vh;
   }
   .firstb {
     display: block;
@@ -110,11 +110,14 @@
     /* background:purple; */
     width: 100%;
   }
-  .headh1,.h-p {
+  .headh1, {
     font-size: 10vw;
-    margin: 0 0 4vh 0;
-    line-height: 2vh;
+    margin: 0 0 7vh 0;
+    line-height: 4vh;
   }
+.h-p{
+   font-size: 6.5vw;
+}
   .himgcol {
     /* background:violet; */
   }
