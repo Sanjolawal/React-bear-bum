@@ -170,7 +170,7 @@ menu h1 {
   margin: 0 4% 0 0;
 }
 .marg {
-  margin: 0 0 -1.6vh 0;
+  margin: 0 0 -0.8vh 0;
   font-size: clamp(16px, 1.2vw, 1.6vw);
 
 }
@@ -204,6 +204,9 @@ menu h1 {
   .imginfo {
     width: 90%;
   }
+  .marg{
+    margin: 0 0 1vh 0;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -236,5 +239,12 @@ menu h1 {
     /* background: violet; */
     /* overflow-x:hidden; */
     grid-template-columns: 26% 26%;
+  }
+  .imginfo{
+    width:74%;
+    object-fit:cover;
+  }
+   .marg{
+    margin: 0 0 -0.8vh 0;
   }
 }
