@@ -1,38 +1,19 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import logo from "../images/logo.png";
 import "./Navbar.css";
-import menubar from "../images/menu-bar.svg";
-import closebtn from "../images/close-btn.svg";
-// import { Link } from "react-router-dom";
-// import About from "../Main/Main";
-// import {FaBars, FaTimes} from "react-icons/fa"
-// import BodyClassName from "react-body-classname";
+import { Link } from "react-scroll";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  let Scroll1 = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  let Scroll2 = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  let Scroll3 = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  let Scroll4 = () => {
-    window.scrollTo({ top: 1200, behavior: "smooth" });
+  const [Click, setClick] = useState(false);
+
+  let handle = () => {
+    setClick(!Click);
   };
 
-  // let hamburger = useRef(null);
-  // let menu2 = useRef();
-  // let navmain1 = useRef();
-  // let ul = useRef();
-
-  // let Display = () => {
-  //   navmain1.current.style.background = "black";
-  //   navmain1.current.style.height = "100vh";
-  //   ul.current.style.display = "block";
-  //   window.body.current.style.overflowY = "hidden";
-  // };
+  const closeMenu = () => {
+    setClick(false);
+  };
 
   const [navmain, setnavmain] = useState(false);
 
@@ -49,20 +30,79 @@ const Navbar = () => {
   return (
     <nav>
       <div className={navmain ? "navmainactive" : "navmain"}>
-        <div className="div">
+        <div className={Click ? "div1" : "div"}>
           <img src={logo} alt="logo" className="Navimg" />
           <h1>THE BEAR BUMS</h1>
         </div>
-        <ul className="ul">
-          <li onClick={Scroll1}>About</li>
-          <li onClick={Scroll2}>Specs</li>
-          <li onClick={Scroll2}>Roadmap</li>
-          <li onClick={Scroll3}>Team</li>
-          <li onClick={Scroll4}>FAQ</li>
+        <ul className={Click ? "ulactive" : "ul"}>
+          <li>
+            <Link
+              onClick={closeMenu}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              to="specs"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Specs
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="roadmap"
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              Roadmap
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              Team
+            </Link>
+          </li>
+          <li >
+            <Link
+              onClick={closeMenu}
+              to="faq"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              FAQ
+            </Link>
+          </li>
         </ul>
-        <img src={menubar} alt="" className="menu1" />
+        <div className="menu1" onClick={handle}>
+          {Click ? <FaTimes size={40} /> : <FaBars size={30} />}
+        </div>
 
-        <img src={closebtn} alt="" className="menu2" />
+        {/* <img src={menubar} alt="" className="menu1" /> */}
+
+        {/* <img src={closebtn} alt="" className="menu2" /> */}
       </div>
     </nav>
   );

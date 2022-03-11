@@ -45,7 +45,7 @@ const Faq = () => {
  };
 
   return (
-    <div className="faq">
+    <div className="faq" id="faq">
       <h6>FAQ</h6>
       <h2>Frequency Asked Questions</h2>
       <div className="faq1">

@@ -26,8 +26,8 @@ const Main = () => {
 }
 
   return (
-    <main>
-      <hr className="line"  />
+    <main id="about">
+      <hr className="line" />
 
       <header>
         <img src={Video} alt="video" />
@@ -45,7 +45,7 @@ const Main = () => {
           </p>
         </div>
       </header>
-      <section>
+      <section id="specs">
         <h6>PERKS</h6>
         <h1>Welcome To The Crew</h1>
         <div className="firstdiv">
@@ -90,7 +90,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <article>
+      <article id="roadmap">
         <div className="articlediv1">
           <h1>Plant a Tree With Every NFT Sale or Resell</h1>
           <p>
@@ -197,7 +197,7 @@ const Main = () => {
           <img src={dbimg} alt="" />
         </div>
       </menu>
-      <div className="workerinfo">
+      <div className="workerinfo" id="team">
         <h6>OUR BRAIN</h6>
         <h1 className="infoh1">THE REAL BEAR BUMS</h1>
 

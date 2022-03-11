@@ -9,7 +9,7 @@ import discord from "../images/discord.png";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="Header">
       <div className="mainhcon">
         <div className="firstb">
           <div className="cntdiv">
