@@ -2,19 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Navbar from './Components/Navbar/Navbar';
-import Header from './Components/Header/Header';
-import Main from "./Components/Main/Main";
-import Faq from "./Components/Faq/Faq";
-import Footer from "./Components/Footer/Footer";
+import App from "./Components/App/App";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter} from "react-router-dom";
+// import Header from "./Components/Header/Header";
+// import Main from "./Components/Main/Main"
+// import Faq from "./Components/Faq/Faq";
+// import Navbar from "./Components/Navbar/Navbar";
+// import Footer from "./Components/Footer/Footer";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Navbar />
-    <Main />
-    <Faq />
-    <Footer />
+    <App/>
+    {/* <Routes>
+      <Navbar />
+      <Route path="/" exact element={<Header />} />
+      <Route path="/about" element={<Main />} />
+      <Route path="/faq" element={<Faq />} />
+      <Route path="/footer" element={<Footer />} />
+    </Routes> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

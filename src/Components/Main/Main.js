@@ -15,10 +15,20 @@ import lglot from "../images/lg-lot.jpg";
 import glot from "../images/g-lot.jpg";
 import blot from "../images/b-lot.png";
 import dbimg from "../images/db-img.png";
+import top from "../images/top.png";
+ 
+
+// import useWindowScroll from "react-use"
+
 const Main = () => {
+  let Scrolltop = () => {
+  window.scrollTo({top:0, behavior:'smooth'})
+}
+
   return (
     <main>
-      <hr className="line" />
+      <hr className="line"  />
+
       <header>
         <img src={Video} alt="video" />
         <div>
@@ -35,7 +45,6 @@ const Main = () => {
           </p>
         </div>
       </header>
-
       <section>
         <h6>PERKS</h6>
         <h1>Welcome To The Crew</h1>
@@ -81,7 +90,6 @@ const Main = () => {
           </div>
         </div>
       </section>
-
       <article>
         <div className="articlediv1">
           <h1>Plant a Tree With Every NFT Sale or Resell</h1>
@@ -99,7 +107,6 @@ const Main = () => {
           <img src={trillus} alt="trees" className="imgtree" />
         </div>
       </article>
-
       <menu>
         <div>
           <h6>OUR JOURNEY</h6>
@@ -190,7 +197,6 @@ const Main = () => {
           <img src={dbimg} alt="" />
         </div>
       </menu>
-
       <div className="workerinfo">
         <h6>OUR BRAIN</h6>
         <h1 className="infoh1">THE REAL BEAR BUMS</h1>
@@ -242,8 +248,10 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <img src={top} alt="" className="fixedbtn" onClick={Scrolltop} />
     </main>
   );
 };
+
 
 export default Main;

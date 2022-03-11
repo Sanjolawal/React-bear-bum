@@ -1,5 +1,5 @@
 main {
-  margin: 0;
+  margin: 0% 0 0 0;
   padding: 2vh 0 0 0;
   background: rgb(0, 0, 0);
   display: grid;
@@ -178,6 +178,14 @@ menu h1 {
   color: rgb(135, 97, 168);
   font-size: clamp(11.5px, 1.2vw, 1.6vw);
 
+}
+
+.fixedbtn{
+  position:fixed;
+  top:95%;
+  right: 3vw;
+  background:rgb(100,97,168);
+  border-radius:50%;
 }
 
 @media all and (max-width: 1036px) {
