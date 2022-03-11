@@ -37,7 +37,7 @@ const Navbar = () => {
   const [navmain, setnavmain] = useState(false);
 
   let ChangeBg = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 300) {
       setnavmain(true);
     } else {
       setnavmain(false);
