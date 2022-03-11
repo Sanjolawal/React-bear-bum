@@ -41,9 +41,11 @@ h2{
   transform: scaleY(1);
   display: grid;
   align-self: center;
+  z-index:0;
 }
 .turn2 {
   transform: scaleY(-1);
+  z-index:0;
 }
 
 @media all and (max-width: 1036px) {
