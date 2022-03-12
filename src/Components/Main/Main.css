@@ -145,7 +145,8 @@ menu h1 {
   width: 70%;
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10%;
-  column-gap: 5vw;
+  column-gap: 7vw;
+  margin: 0 0 0 -12vw;
   /* background:red; */
 }
 
@@ -193,6 +194,30 @@ menu h1 {
   padding: 2vh;
 }
 
+
+@media screen and (max-width: 1136px) and (min-width:1037px){
+ .line {
+  width: 80%;
+  margin:0 0vw 4vh 5vw;
+  /* margin:0; */
+}
+main header {
+  margin:0 0 0 -10vw;
+}
+main section{
+  margin: 0 0 0 -10vw;
+}
+main article{
+  margin: 0 0 0 -6.5vw;
+
+}
+.imggallery{
+  margin: 0 0 0 -16vw
+}
+}
+
+
+
 @media all and (max-width: 1036px) {
   /* header div p {
     line-height: 4vh;
@@ -208,6 +233,7 @@ menu h1 {
     grid-template-columns: 30% 30% 30%;
     column-gap: 3vw;
     row-gap: 3vh;
+    margin: 0 0 0 0;
   }
   .moreinfo {
     grid-template-columns: 28% 28%;
