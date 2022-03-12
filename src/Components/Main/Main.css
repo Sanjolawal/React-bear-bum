@@ -78,6 +78,10 @@ h6 {
 .imgillus{
   margin:0;
 }
+.pillus{
+  text-align:start;
+  z-index:0;
+}
 article {
   color: white;
   width: 100%;
@@ -168,6 +172,7 @@ menu h1 {
   border: none;
   border-radius: 50%;
   margin: 0 4% 0 0;
+  width:50%;
 }
 .marg {
   margin: 0 0 -0.8vh 0;
@@ -184,7 +189,7 @@ menu h1 {
   position:fixed;
   top:95%;
   right: 3vw;
-  background:rgb(100,97,168);
+  background:#8761a8;
   border-radius:50%;
 }
 
@@ -221,6 +226,9 @@ menu h1 {
   .firstdiv {
     width: 96%;
     grid-template-columns: 100%;
+  }
+  .pillus{
+    text-align:center;
   }
   .articleimg {
     grid-template-columns: 100%;

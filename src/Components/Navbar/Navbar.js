@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import logo from "../images/logo.png";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  let Hh1 = useRef();
+  let log1 = useRef();
+
   const [Click, setClick] = useState(false);
 
   let handle = () => {
@@ -20,8 +23,12 @@ const Navbar = () => {
   let ChangeBg = () => {
     if (window.scrollY >= 100) {
       setnavmain(true);
+      Hh1.current.style.color = "rgb(119, 119, 119)";
+      log1.current.style.color = "rgb(119, 119, 119)";
     } else {
       setnavmain(false);
+      Hh1.current.style.color = "white";
+      log1.current.style.color = "white";
     }
   };
 
@@ -32,7 +39,9 @@ const Navbar = () => {
       <div className={navmain ? "navmainactive" : "navmain"}>
         <div className={Click ? "div1" : "div"}>
           <img src={logo} alt="logo" className="Navimg" />
-          <h1>THE BEAR BUMS</h1>
+          <h1 className="Nh1" ref={Hh1}>
+            THE BEAR BUMS
+          </h1>
         </div>
         <ul className={Click ? "ulactive" : "ul"}>
           <li>
@@ -83,7 +92,7 @@ const Navbar = () => {
               Team
             </Link>
           </li>
-          <li >
+          <li>
             <Link
               onClick={closeMenu}
               to="faq"
@@ -97,7 +106,11 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="menu1" onClick={handle}>
-          {Click ? <FaTimes size={40} /> : <FaBars size={30} />}
+          {Click ? (
+            <FaTimes size={40} ref={log1} />
+          ) : (
+            <FaBars size={30} ref={log1} />
+          )}
         </div>
 
         {/* <img src={menubar} alt="" className="menu1" /> */}

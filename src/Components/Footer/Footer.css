@@ -31,12 +31,11 @@ footer {
   justify-content: space-between;
 }
 .smicons {
-  border: 1px solid white;
   border-radius: 50%;
   border: 2px solid white;
   margin: 0 2vw 0 0;
-  padding:0.4vh;
-  width: 20%;
+  padding:0.8vh;
+  width: 100%;
 }
 .imgid {
   width: 50%;
@@ -66,12 +65,12 @@ footer p {
     display: block;
   }
   .iconcon {
-    width: 50%;
+    width: 80%;
   }
-  .smicons {
-    width: 30%;
+   .smicons {
     margin: 0 3vw 0 0;
-  }
+    padding:1.4vh;
+  } 
   .imgid {
     width: 50%;
   }

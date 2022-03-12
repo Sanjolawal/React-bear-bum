@@ -16,6 +16,12 @@ import glot from "../images/g-lot.jpg";
 import blot from "../images/b-lot.png";
 import dbimg from "../images/db-img.png";
 import top from "../images/top.png";
+import first from "../images/first.webp"
+import second from "../images/second.webp";
+import third from "../images/third.webp";
+import fourth from "../images/fourth.webp";
+
+
  
 
 // import useWindowScroll from "react-use"
@@ -52,7 +58,7 @@ const Main = () => {
           <div className="sectiondiv">
             <img src={Dillus} alt="llus" className="imgillus" />
             <h3>Exclusivity</h3>
-            <p>
+            <p className="pillus">
               The Bear Bums offers an exclusive 10,000 NFT collection that
               includes extreme rares, animations, and other innovations not yet
               prominent in the NFT space.
@@ -61,7 +67,7 @@ const Main = () => {
           <div className="sectiondiv">
             <img src={fillus} alt="illus" className="imgillus" />
             <h3>Full Transparency</h3>
-            <p>
+            <p className="pillus">
               We believe in complete ownership and fair distribution within our
               community. Which is why we have put a strong emphasis on security
               of our investors/community members.
@@ -70,8 +76,8 @@ const Main = () => {
           <div className="sectiondiv">
             <img src={eillus} alt="illus" className="imgillus" />
             <h3>Tight-knit Community</h3>
-            <p>
-              Become part of an amazing community that encourages love for one
+            <p className="pillus">
+               Become part of an amazing community that encourages love for one
               another and the planet. As our member base expands our goal is to
               give each and every one of you a more rewarding experience and
               continuous exclusive benefits for being a part of our vision.
@@ -80,7 +86,7 @@ const Main = () => {
           <div className="sectiondiv">
             <img src={willus} alt="illus" className="imgillus" />
             <h3>Rewards</h3>
-            <p>
+            <p className="pillus">
               As the project continues to grow, so do the perks and rewards
               given to our community members. We will be offering consistent
               prizes in multiple forms, such as airdrops, sneak-peaks,
@@ -203,7 +209,7 @@ const Main = () => {
 
         <div className="moreinfo">
           <div className="more2">
-            <img src={lglot} alt="" className="imginfo" />
+            <img src={first} alt="" className="imginfo" />
             <div>
               <h2 className="marg">@maximustudios</h2>
               <p className="parg">Artist & Founder</p>
@@ -214,7 +220,7 @@ const Main = () => {
             </div>
           </div>
           <div className="more2">
-            <img src={glot} alt="" className="imginfo" />
+            <img src={second} alt="" className="imginfo" />
             <div>
               <h2 className="marg">@mamabear</h2>
               <p className="parg">NFT Marketer</p>
@@ -225,7 +231,7 @@ const Main = () => {
             </div>
           </div>
           <div className="more2">
-            <img src={pinklot} alt="" className="imginfo" />
+            <img src={third} alt="" className="imginfo" />
             <div>
               <h2 className="marg">@dizzybiz</h2>
               <p className="parg">Crypto Guru</p>
@@ -236,7 +242,7 @@ const Main = () => {
             </div>
           </div>
           <div className="more2">
-            <img src={ylot} alt="" className="imginfo" />
+            <img src={fourth} alt="" className="imginfo" />
             <div>
               <h2 className="marg">@thebearedbear</h2>
               <p className="parg">Community Manager</p>

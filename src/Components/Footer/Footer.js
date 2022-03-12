@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../images/logo.png";
-import medium from "../images/medium.png";
-import youtube from "../images/youtube.png";
-import instagram from "../images/instagram.png";
-import twitter from "../images/twitter.png";
-import discord from "../images/discord.png";
 import lillus from "../images/1.webp";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillMediumSquare } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -19,11 +20,11 @@ const Footer = () => {
         </div>
         <div>
           <div className="iconcon">
-            <img src={medium} alt="" className="smicons" />
-            <img src={youtube} alt="" className="smicons" />
-            <img src={instagram} alt="" className="smicons" />
-            <img src={twitter} alt="" className="smicons" />
-            <img src={discord} alt="" className="smicons" />
+            <AiFillMediumSquare alt="" className="smicons" color={'white'} />
+            <AiOutlineYoutube alt="" className="smicons" color="white" />
+            <AiOutlineInstagram alt="" className="smicons"   color="white"  />
+            <AiOutlineTwitter alt="" className="smicons"     color="white" />
+            <FaDiscord alt="" className="smicons"            color="white" />
           </div>
         </div>
         <div>

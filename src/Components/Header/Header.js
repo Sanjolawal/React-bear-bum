@@ -1,11 +1,12 @@
 import React from "react";
 import "./Header.css";
 import Hillus from "../images/h-illus.jpg";
-import medium from "../images/medium.png";
-import youtube from "../images/youtube.png";
-import instagram from "../images/instagram.png";
-import twitter from "../images/twitter.png";
-import discord from "../images/discord.png";
+import { AiOutlineYoutube } from "react-icons/ai"
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillMediumSquare } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
+
 
 const Header = () => {
   return (
@@ -17,36 +18,32 @@ const Header = () => {
               WELCOME TO <br /> <span className="h-p">THE BEAR BUMS</span>
             </h4>
             <div className="himgcol">
-              <img
-                src={youtube}
+              <AiOutlineYoutube
+                // src={AiOutlineYoutube}
                 alt="icons"
                 className="smicons"
                 id="smicolon2"
-              ></img>
-              <img
-                src={instagram}
+              />
+              <AiOutlineInstagram
                 alt="icons"
                 className="smicons"
                 id="smicolon2"
-              ></img>
-              <img
-                src={twitter}
+              />
+              <AiOutlineTwitter
                 alt="icons"
                 className="smicons"
                 id="smicolon2"
-              ></img>
-              <img
-                src={medium}
+              />
+              <AiFillMediumSquare
                 alt="icons"
                 className="smicons"
                 id="smicolon2"
-              ></img>
-              <img
-                src={discord}
+              />
+              <FaDiscord
                 alt="icons"
                 className="smicons"
                 id="smicolon2"
-              ></img>
+              />
             </div>
           </div>
         </div>
