@@ -15,7 +15,7 @@ import lglot from "../images/lg-lot.jpg";
 import glot from "../images/g-lot.jpg";
 import blot from "../images/b-lot.png";
 import dbimg from "../images/db-img.png";
-import top from "../images/top.png";
+// import top from "../images/top.png";
 import first from "../images/first.webp"
 import second from "../images/second.webp";
 import third from "../images/third.webp";
