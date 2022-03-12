@@ -28,14 +28,16 @@ footer {
   display: flex;
   margin: 0;
   /* background: red; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  width:;
 }
 .smicons {
-  border-radius: 50%;
+  border-radius: 60%;
   border: 2px solid white;
-  margin: 0 2vw 0 0;
-  padding:0.8vh;
+  margin: 0 1.4vw 0 0;
+  padding:0.3vh;
   width: 100%;
+  /* background:red; */
 }
 .imgid {
   width: 50%;
@@ -53,6 +55,17 @@ footer p {
   .imgid {
     width: 70%;
   }
+   .smicons {
+    margin: 0 2.4vw 0 0;
+    padding:0.6vh;
+  } 
+}
+
+@media all and (max-width:750px){
+   .smicons {
+    margin: 0 1.5vw 0 0;
+    padding:1vh;
+  } 
 }
 
 @media all and (max-width: 500px) {
@@ -68,8 +81,8 @@ footer p {
     width: 80%;
   }
    .smicons {
-    margin: 0 3vw 0 0;
-    padding:1.4vh;
+    margin: 0 1.5vw 0 0;
+    padding:1vh;
   } 
   .imgid {
     width: 50%;

@@ -21,27 +21,33 @@ const Header = () => {
               <AiOutlineYoutube
                 // src={AiOutlineYoutube}
                 alt="icons"
-                className="smicons"
+                // className="smicons"
                 id="smicolon2"
+                size={30}
               />
               <AiOutlineInstagram
                 alt="icons"
-                className="smicons"
+                // className="smicons"
                 id="smicolon2"
+                size={30}
               />
               <AiOutlineTwitter
                 alt="icons"
-                className="smicons"
+                // className="smicons"
                 id="smicolon2"
+                size={30}
               />
               <AiFillMediumSquare
                 alt="icons"
-                className="smicons"
+                // className="smicons"
                 id="smicolon2"
+                size={30}
               />
+
               <FaDiscord
                 alt="icons"
-                className="smicons"
+                size={30}
+                // className="smicons"
                 id="smicolon2"
               />
             </div>

@@ -82,8 +82,8 @@ a{
   }
   .div {
     background: transparent;
-    width: 95%;
-    padding: 0 5% 0 0%;
+    width: 90%;
+    padding: 0 3% 0 7%;
   }
   .div1 {
     background: black;
@@ -149,9 +149,9 @@ a{
     /* background: violet; */
   }
   .div {
-    background: transparent;
-    width: 95%;
-    padding: 0 5% 0 0%;
+    /* background: yellow; */
+    width: 90%;
+    padding: 0 3% 0 7%;
   }
   .div1 {
     background: black;
@@ -211,7 +211,10 @@ a{
     padding: 0;
   } */
   .Navimg {
-    width: 15%;
+    width: 10%;
+  }
+  .Nh1{
+    font-size:24px;
   }
   .menu1,
   .menu2 {

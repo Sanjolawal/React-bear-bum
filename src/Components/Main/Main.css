@@ -75,12 +75,12 @@ h6 {
   justify-items: center;
   /* background:yellow; */
 }
-.imgillus{
-  margin:0;
+.imgillus {
+  margin: 0;
 }
-.pillus{
-  text-align:start;
-  z-index:0;
+.pillus {
+  text-align: start;
+  z-index: 0;
 }
 article {
   color: white;
@@ -172,25 +172,25 @@ menu h1 {
   border: none;
   border-radius: 50%;
   margin: 0 4% 0 0;
-  width:50%;
+  width: 50%;
 }
 .marg {
   margin: 0 0 -0.8vh 0;
   font-size: clamp(16px, 1.2vw, 1.6vw);
-
 }
 .parg {
   color: rgb(135, 97, 168);
   font-size: clamp(11.5px, 1.2vw, 1.6vw);
-
 }
 
-.fixedbtn{
-  position:fixed;
-  top:95%;
+.fixedbtn {
+  position: fixed;
+  top: 92%;
   right: 3vw;
-  background:#8761a8;
-  border-radius:50%;
+  background: rgb(54,29,79);;
+  border-radius: 50%;
+  border:none;
+  padding: 2vh;
 }
 
 @media all and (max-width: 1036px) {
@@ -215,9 +215,9 @@ menu h1 {
     row-gap: 4vh;
   }
   .imginfo {
-    width: 90%;
+    width: 70%;
   }
-  .marg{
+  .marg {
     margin: 0 0 1vh 0;
   }
 }
@@ -227,8 +227,8 @@ menu h1 {
     width: 96%;
     grid-template-columns: 100%;
   }
-  .pillus{
-    text-align:center;
+  .pillus {
+    text-align: center;
   }
   .articleimg {
     grid-template-columns: 100%;
@@ -254,13 +254,28 @@ menu h1 {
     width: 100%;
     /* background: violet; */
     /* overflow-x:hidden; */
-    grid-template-columns: 26% 26%;
+    grid-template-columns: 35% 35%;
   }
-  .imginfo{
-    width:74%;
-    object-fit:cover;
+  .imginfo {
+    width: 80%;
+    object-fit: cover;
   }
-   .marg{
+  .more2 {
+    display: block;
+    /* background:green; */
+    margin: 0 0 0 5vw;
+  }
+  .glitch {
+    /* background:red; */
+    width: 100%;
+  }
+  .marg {
     margin: 0 0 -0.8vh 0;
+    text-align: center;
+  }
+
+  .parg {
+    font-size: 14px;
+    text-align: center;
   }
 }

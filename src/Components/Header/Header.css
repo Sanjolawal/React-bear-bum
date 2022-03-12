@@ -9,7 +9,6 @@
   /* position:relative; */
   /* position: absolute;
   top: 0%;*/
-  height: 100vh;
   padding: 0 0 8vh 0;
   color: white;
 }
@@ -41,22 +40,23 @@
   font-size: 60px;
   margin: 0 0 8vh 0;
   line-height: 60px;
-  font-family:700;
+  font-family: 700;
 }
 .h-p {
   font-weight: 100;
   font-size: 40px;
   margin: 0vh 0 36px 0;
   padding: 0;
-  line-height:60px;
+  line-height: 60px;
 }
 
 #smicolon2 {
-  width: 4.8%;
-  margin: 0 0.8vw 0 0;
-  padding: 1.5vh;
+  width: 8%;
+  margin: 0 1vw 0 0;
+  padding: 1vh;
   /* background:red; */
-  border:1px solid rgb(255,255,255,0.5)
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius:50%;
 }
 
 .secondb {
@@ -81,13 +81,14 @@
 
 .himgcol {
   margin: 0;
+  /* background:red; */
 }
 .puppyimg {
   width: 100%;
 }
 .headbtn {
   padding: 3vh 3vw 3vh 3vw;
-  margin: 6vh 0 0 0;
+  margin: 6vh 0 20vh 0;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -98,11 +99,26 @@
   background: rgb(245, 183, 90);
 }
 
-@media all and (max-width: 1036px) {
+@media all and (max-width: 1500px) {
+  .headh1 {
+    font-size: 40px;
+    margin: 0 0 8vh 0;
+    line-height: 60px;
+    font-family: 700;
+  }
+  .h-p {
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0vh 0 36px 0;
+    padding: 0;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1036px) and (orientation: portrait) {
   .header {
     display: block;
     /* background:red; */
-    height: 80vh;
   }
   .firstb {
     display: block;
@@ -115,20 +131,21 @@
     width: 100%;
   }
   .headh1 {
-    font-size:40px;
+    font-size: 40px;
     margin: 0 0 36px 0;
     line-height: 40px;
   }
-.h-p{
-  font-size:35px;
-  line-height:40px;
-  margin-bottom:36px;
-}
+  .h-p {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
   .himgcol {
     /* background:violet; */
   }
   #smicolon2 {
     margin: 0 3vw 0 0;
+    width: 6%;
   }
   .secondb2 {
     width: 86%;
@@ -136,10 +153,53 @@
   .headbtn {
     padding: 1.5vh 3vw 1.5vh 3vw;
     font-size: 20px;
+    margin: 10vh 0 0vh 0;
   }
 }
 
-@media all and (max-width:900px){
+@media screen and (max-width: 1036px) and (orientation: landscape) {
+  .header {
+    display: block;
+    /* background:green; */
+  }
+  .firstb {
+    display: block;
+    padding: 0 0 0 10%;
+    /* background:red; */
+  }
+  .mainhcon {
+    display: block;
+    /* background:purple; */
+    width: 100%;
+  }
+  .headh1 {
+    font-size: 60px;
+    margin: 0 0 36px 0;
+    line-height: 40px;
+  }
+  .h-p {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+  .himgcol {
+    /* background:violet; */
+  }
+  #smicolon2 {
+    margin: 0 3vw 0 0;
+    width: 4.5%;
+  }
+  .secondb2 {
+    width: 80%;
+  }
+  .headbtn {
+    padding: 1.5vh 3vw 1.5vh 3vw;
+    font-size: 20px;
+    margin: 10vh 0 0vh 0;
+  }
+}
+
+/* @media all and (max-width:900px){
   .header{
     height:156vh;
   }
@@ -156,13 +216,12 @@
   .secondb2{
     width:82%;
   }
-}
+} */
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
   .header {
     display: block;
-    /* background:red; */
-    height: 96vh;
+    /* background:yellow; */
   }
   .firstb {
     display: block;
@@ -173,12 +232,14 @@
     /* background:purple; */
     width: 100%;
   }
-  
+
   .himgcol {
     /* background:violet; */
   }
   #smicolon2 {
     margin: 0 3vw 0 0;
+    width: 8%;
+    padding: 0.6vh;
   }
   .secondb2 {
     width: 94%;

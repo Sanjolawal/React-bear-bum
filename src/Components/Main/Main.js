@@ -20,6 +20,7 @@ import first from "../images/first.webp"
 import second from "../images/second.webp";
 import third from "../images/third.webp";
 import fourth from "../images/fourth.webp";
+import { FaAngleUp } from "react-icons/fa";
 
 
  
@@ -210,7 +211,7 @@ const Main = () => {
         <div className="moreinfo">
           <div className="more2">
             <img src={first} alt="" className="imginfo" />
-            <div>
+            <div className="glitch">
               <h2 className="marg">@maximustudios</h2>
               <p className="parg">Artist & Founder</p>
               <div>
@@ -254,7 +255,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <img src={top} alt="" className="fixedbtn" onClick={Scrolltop} />
+      <FaAngleUp className="fixedbtn" onClick={Scrolltop} color="white" size="20"/>
     </main>
   );
 };

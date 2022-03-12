@@ -20,11 +20,11 @@ const Footer = () => {
         </div>
         <div>
           <div className="iconcon">
-            <AiFillMediumSquare alt="" className="smicons" color={'white'} />
-            <AiOutlineYoutube alt="" className="smicons" color="white" />
-            <AiOutlineInstagram alt="" className="smicons"   color="white"  />
-            <AiOutlineTwitter alt="" className="smicons"     color="white" />
-            <FaDiscord alt="" className="smicons"            color="white" />
+            <AiFillMediumSquare alt="" className="smicons" color={'white'} size={30} />
+            <AiOutlineYoutube alt="" className="smicons" color="white"     size={30} />
+            <AiOutlineInstagram alt="" className="smicons"   color="white" size={30}  />
+            <AiOutlineTwitter alt="" className="smicons"     color="white" size={30} />
+            <FaDiscord alt="" className="smicons"            color="white" size={30} />
           </div>
         </div>
         <div>
