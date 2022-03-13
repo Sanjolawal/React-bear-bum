@@ -175,11 +175,13 @@ menu h1 {
   margin: 0 4% 0 0;
   width: 50%;
 }
-.marg, .marg1{
+.marg,
+.marg1 {
   margin: 0 0 -0.8vh 0;
   font-size: clamp(16px, 1.2vw, 1.6vw);
 }
-.parg, .parg1{
+.parg,
+.parg1 {
   color: rgb(135, 97, 168);
   font-size: clamp(11.5px, 1.2vw, 1.6vw);
 }
@@ -188,35 +190,42 @@ menu h1 {
   position: fixed;
   top: 92%;
   right: 3vw;
-  background: rgb(54,29,79);;
+  background: rgb(54, 29, 79);
   border-radius: 50%;
-  border:none;
+  border: none;
   padding: 2vh;
+  display: none;
+}
+.fixedbtn1 {
+  position: fixed;
+  top: 92%;
+  right: 3vw;
+  background: rgb(54, 29, 79);
+  border-radius: 50%;
+  border: none;
+  padding: 2vh;
+  display: block;
 }
 
-
-@media screen and (max-width: 1136px) and (min-width:1037px){
- .line {
-  width: 80%;
-  margin:0 0vw 4vh 5vw;
-  /* margin:0; */
+@media screen and (max-width: 1136px) and (min-width: 1037px) {
+  .line {
+    width: 80%;
+    margin: 0 0vw 4vh 5vw;
+    /* margin:0; */
+  }
+  main header {
+    margin: 0 0 0 -10vw;
+  }
+  main section {
+    margin: 0 0 0 -10vw;
+  }
+  main article {
+    margin: 0 0 0 -6.5vw;
+  }
+  .imggallery {
+    margin: 0 0 0 -16vw;
+  }
 }
-main header {
-  margin:0 0 0 -10vw;
-}
-main section{
-  margin: 0 0 0 -10vw;
-}
-main article{
-  margin: 0 0 0 -6.5vw;
-
-}
-.imggallery{
-  margin: 0 0 0 -16vw
-}
-}
-
-
 
 @media all and (max-width: 1036px) {
   /* header div p {
@@ -295,21 +304,19 @@ main article{
     /* background:red; */
     width: 100%;
   }
-  .marg, {
+  .marg {
     margin: 0 0 0vh 0;
     text-align: center;
   }
-  .marg1{
-    margin: 0 0 0 3.4vw
+  .marg1 {
+    margin: 0 0 0 3.4vw;
   }
-  .parg1{
-    margin: 0 0 0 4.8vw
-
+  .parg1 {
+    margin: 0 0 0 4.8vw;
   }
   .parg {
     font-size: 14px;
     text-align: center;
     margin: 0 0 0vh 0;
-
   }
 }

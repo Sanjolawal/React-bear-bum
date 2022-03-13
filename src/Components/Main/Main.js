@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Main.css";
 import Video from "../images/test.gif";
 import Dillus from "../images/D-illus.jpg";
@@ -16,21 +16,40 @@ import glot from "../images/g-lot.jpg";
 import blot from "../images/b-lot.png";
 import dbimg from "../images/db-img.png";
 // import top from "../images/top.png";
-import first from "../images/first.webp"
+import first from "../images/first.webp";
 import second from "../images/second.webp";
 import third from "../images/third.webp";
 import fourth from "../images/fourth.webp";
 import { FaAngleUp } from "react-icons/fa";
-
-
- 
+import AOS from "aos";
 
 // import useWindowScroll from "react-use"
 
 const Main = () => {
+
+  AOS.init({
+    once: true
+});
+
   let Scrolltop = () => {
-  window.scrollTo({top:0, behavior:'smooth'})
-}
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  let totop = useRef();
+
+  const [fixedbtn, setfixedbtn] = useState(false);
+
+  let Showit = () => {
+    if (window.scrollY >= 280) {
+      setfixedbtn(true);
+      totop.current.style.display = "block";
+    } else {
+      setfixedbtn(false);
+      totop.current.style.display = "none";
+    }
+  };
+
+  window.addEventListener("scroll", Showit);
 
   return (
     <main id="about">
@@ -57,7 +76,12 @@ const Main = () => {
         <h1>Welcome To The Crew</h1>
         <div className="firstdiv">
           <div className="sectiondiv">
-            <img src={Dillus} alt="llus" className="imgillus" />
+            <img
+              src={Dillus}
+              alt="llus"
+              className="imgillus"
+              data-aos="fade-up"
+            />
             <h3>Exclusivity</h3>
             <p className="pillus">
               The Bear Bums offers an exclusive 10,000 NFT collection that
@@ -66,7 +90,13 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={fillus} alt="illus" className="imgillus" />
+            <img
+              src={fillus}
+              alt="illus"
+              className="imgillus"
+              data-aos="fade-up"
+            />
+
             <h3>Full Transparency</h3>
             <p className="pillus">
               We believe in complete ownership and fair distribution within our
@@ -75,17 +105,27 @@ const Main = () => {
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={eillus} alt="illus" className="imgillus" />
+            <img
+              src={eillus}
+              alt="illus"
+              className="imgillus"
+              data-aos="fade-up"
+            />
             <h3>Tight-knit Community</h3>
             <p className="pillus">
-               Become part of an amazing community that encourages love for one
+              Become part of an amazing community that encourages love for one
               another and the planet. As our member base expands our goal is to
               give each and every one of you a more rewarding experience and
               continuous exclusive benefits for being a part of our vision.
             </p>
           </div>
           <div className="sectiondiv">
-            <img src={willus} alt="illus" className="imgillus" />
+            <img
+              src={willus}
+              alt="illus"
+              className="imgillus"
+              data-aos="fade-up"
+            />
             <h3>Rewards</h3>
             <p className="pillus">
               As the project continues to grow, so do the perks and rewards
@@ -108,10 +148,30 @@ const Main = () => {
           </p>
         </div>
         <div className="articleimg">
-          <img src={lillus} alt="trees" className="imgtree" />
-          <img src={ftillus} alt="trees" className="imgtree" />
-          <img src={stillus} alt="trees" className="imgtree" />
-          <img src={trillus} alt="trees" className="imgtree" />
+          <img
+            src={lillus}
+            alt="trees"
+            className="imgtree"
+            data-aos="fade-up"
+          />
+          <img
+            src={ftillus}
+            alt="trees"
+            className="imgtree"
+            data-aos="fade-up"
+          />
+          <img
+            src={stillus}
+            alt="trees"
+            className="imgtree"
+            data-aos="fade-up"
+          />
+          <img
+            src={trillus}
+            alt="trees"
+            className="imgtree"
+            data-aos="fade-up"
+          />
         </div>
       </article>
       <menu>
@@ -207,9 +267,8 @@ const Main = () => {
       <div className="workerinfo" id="team">
         <h6>OUR BRAIN</h6>
         <h1 className="infoh1">THE REAL BEAR BUMS</h1>
-
         <div className="moreinfo">
-          <div className="more2">
+          <div className="more2" data-aos="fade-right">
             <img src={first} alt="" className="imginfo" />
             <div className="glitch">
               <h2 className="marg">@maximustudios</h2>
@@ -220,7 +279,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className="more2">
+          <div className="more2" data-aos="fade-right">
             <img src={second} alt="" className="imginfo" />
             <div>
               <h2 className="marg1">@mamabear</h2>
@@ -231,7 +290,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className="more2">
+          <div className="more2" data-aos="fade-right">
             <img src={third} alt="" className="imginfo" />
             <div>
               <h2 className="marg1">@dizzybiz</h2>
@@ -242,7 +301,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className="more2">
+          <div className="more2" data-aos="fade-right">
             <img src={fourth} alt="" className="imginfo" />
             <div>
               <h2 className="marg">@thebearedbear</h2>
@@ -255,10 +314,15 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <FaAngleUp className="fixedbtn" onClick={Scrolltop} color="white" size="20"/>
+      <FaAngleUp
+        className={fixedbtn ? "fixedbtn1" : "fixedbtn"}
+        onClick={Scrolltop}
+        color="white"
+        size="20"
+        ref={totop}
+      />
     </main>
   );
 };
-
 
 export default Main;
