@@ -20,6 +20,11 @@ import first from "../images/first.webp";
 import second from "../images/second.webp";
 import third from "../images/third.webp";
 import fourth from "../images/fourth.webp";
+import five from "../images/5.webp";
+import six from "../images/6.webp";
+import seven from "../images/7.webp";
+
+
 import { FaAngleUp } from "react-icons/fa";
 import AOS from "aos";
 
@@ -273,9 +278,9 @@ const Main = () => {
             <div className="glitch">
               <h2 className="marg">@maximustudios</h2>
               <p className="parg">Artist & Founder</p>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div className="scon22">
+                <img src={five} alt="" className="sico1" />
+                <img src={six} alt=""  className="sico2"/>
               </div>
             </div>
           </div>
@@ -284,9 +289,9 @@ const Main = () => {
             <div>
               <h2 className="marg1">@mamabear</h2>
               <p className="parg1">NFT Marketer</p>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div  className="scon22">
+                <img src={six} alt="" className="sico2" id="sico1"/>
+                <img src="" alt=""   />
               </div>
             </div>
           </div>
@@ -295,9 +300,9 @@ const Main = () => {
             <div>
               <h2 className="marg1">@dizzybiz</h2>
               <p className="parg1">Crypto Guru</p>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div className="scon22">
+                <img src={seven} alt="" className="sico1" id="sico1" />
+                <img src={six} alt="" className="sico2"   id="sico2" />
               </div>
             </div>
           </div>
@@ -306,9 +311,9 @@ const Main = () => {
             <div>
               <h2 className="marg">@thebearedbear</h2>
               <p className="parg">Community Manager</p>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div className="scon22">
+                <img src={six} alt="" className="sico2" />
+                <img src="" alt=""  className="sico1"/>
               </div>
             </div>
           </div>

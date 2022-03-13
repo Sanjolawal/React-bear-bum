@@ -185,6 +185,29 @@ menu h1 {
   color: rgb(135, 97, 168);
   font-size: clamp(11.5px, 1.2vw, 1.6vw);
 }
+.scon22{
+  margin:1vh 0 0 0;
+  /* background:red; */
+  display:flex;
+  justify-content:flex-start;
+  /* grid-template-columns: 40% 40%; */
+}
+
+.sico1{
+  width:16%;
+}
+.sico2{
+  width:14%;
+}
+#sico1{
+  width:22%;
+  margin: 0 0.4vw 0 0;
+}
+#sico2{
+  width:20%;
+}
+
+
 
 .fixedbtn {
   position: fixed;
@@ -319,4 +342,17 @@ menu h1 {
     text-align: center;
     margin: 0 0 0vh 0;
   }
+  .scon22{
+    justify-content:center;
+  }
+
+.sico1{
+  width:16%;
+}
+.sico2{
+  width:14%;
+}
+#sico1,#sico2{
+  width:15%;
+}
 }
