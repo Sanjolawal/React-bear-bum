@@ -175,11 +175,11 @@ menu h1 {
   margin: 0 4% 0 0;
   width: 50%;
 }
-.marg {
+.marg, .marg1{
   margin: 0 0 -0.8vh 0;
   font-size: clamp(16px, 1.2vw, 1.6vw);
 }
-.parg {
+.parg, .parg1{
   color: rgb(135, 97, 168);
   font-size: clamp(11.5px, 1.2vw, 1.6vw);
 }
@@ -295,13 +295,21 @@ main article{
     /* background:red; */
     width: 100%;
   }
-  .marg {
-    margin: 0 0 -0.8vh 0;
+  .marg, {
+    margin: 0 0 0vh 0;
     text-align: center;
   }
+  .marg1{
+    margin: 0 0 0 3.4vw
+  }
+  .parg1{
+    margin: 0 0 0 4.8vw
 
+  }
   .parg {
     font-size: 14px;
     text-align: center;
+    margin: 0 0 0vh 0;
+
   }
 }

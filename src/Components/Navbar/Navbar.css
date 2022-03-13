@@ -140,6 +140,22 @@ a{
   }
 }
 
+@media screen and (max-width:1036px) and (orientation:portrait){
+  .menu1,
+  .menu2 {
+    display: block;
+    position: absolute;
+    top: 0vh;
+    right: 3%;
+    /* background: red; */
+    width: 7%;
+  }
+
+  .menu2 {
+    display: none;
+  }
+}
+
 
 @media all and (max-width: 1036px) {
   .navmain {

@@ -223,8 +223,8 @@ const Main = () => {
           <div className="more2">
             <img src={second} alt="" className="imginfo" />
             <div>
-              <h2 className="marg">@mamabear</h2>
-              <p className="parg">NFT Marketer</p>
+              <h2 className="marg1">@mamabear</h2>
+              <p className="parg1">NFT Marketer</p>
               <div>
                 <img src="" alt="" />
                 <img src="" alt="" />
@@ -234,8 +234,8 @@ const Main = () => {
           <div className="more2">
             <img src={third} alt="" className="imginfo" />
             <div>
-              <h2 className="marg">@dizzybiz</h2>
-              <p className="parg">Crypto Guru</p>
+              <h2 className="marg1">@dizzybiz</h2>
+              <p className="parg1">Crypto Guru</p>
               <div>
                 <img src="" alt="" />
                 <img src="" alt="" />
