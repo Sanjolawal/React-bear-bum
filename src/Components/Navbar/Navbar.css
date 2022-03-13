@@ -145,10 +145,10 @@ a{
   .menu2 {
     display: block;
     position: absolute;
-    top: 0vh;
+    top: -4vh;
     right: 3%;
     /* background: red; */
-    width: 7%;
+    width: 8%;
   }
 
   .menu2 {
