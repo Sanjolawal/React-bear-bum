@@ -118,7 +118,7 @@
 @media screen and (max-width: 1036px) and (orientation: portrait) {
   .header {
     display: block;
-    background:red;
+    /* background:red; */
   }
   .firstb {
     display: block;
@@ -194,7 +194,7 @@
 @media screen and (max-width: 990px) and (orientation: landscape) {
   .header {
     display: block; 
-    background:green;
+    /* background:green; */
   }
    .firstb {
     display: block;
