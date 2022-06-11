@@ -1,4 +1,4 @@
-body{
+body {
   /* overflow-x:hidden; */
 }
 nav {
@@ -11,6 +11,39 @@ nav {
   /* justify-items: center; */
   /* background: red; */
 }
+
+.all {
+  text-decoration: none;
+}
+.WARNING {
+  color: yellow;
+  text-align: center;
+  font-size: clamp(13px, 1vw, 1.2vw);
+  margin: 0;
+  padding: 0 0 2vh 0;
+  background: black;
+  z-index: 100;
+}
+.remove {
+  font-size: clamp(30px, 1.8vw, 1.9vw);
+  color: white;
+  padding-left: 90vw;
+  /* padding: 0; */
+  cursor: pointer;
+  background: black;
+  width: 100%;
+  z-index: 100;
+}
+.remove:hover {
+  color: red;
+}
+.danger {
+  color: red;
+}
+.wtcolor {
+  color: green;
+}
+
 .navmain {
   /* background: orange; */
   width: 90%;
@@ -22,8 +55,8 @@ nav {
   padding: 0 5vw 0 5vw;
 }
 .navmainactive {
-  background: rgb(10,10,10);
-  border-bottom: 2px solid rgb(245,245,245);
+  background: rgb(10, 10, 10);
+  border-bottom: 2px solid rgb(245, 245, 245);
   width: 90%;
   display: grid;
   grid-template-columns: 68% 29.5%;
@@ -31,17 +64,17 @@ nav {
   color: white;
   position: fixed;
   padding: 0 5vw 0 5vw;
-  z-index:100;
-  align-items:center;
+  z-index: 100;
+  align-items: center;
 }
 .div {
   /* background: yellow; */
   display: flex;
 }
-.Nh1{
+.Nh1 {
   /* font-family:Gilroy-light; */
-  font-size:27px;
-  font-weight:100;
+  font-size: 27px;
+  font-weight: 100;
 }
 .ul {
   /* background: gold; */
@@ -57,9 +90,9 @@ li:hover {
   border-bottom: 2px solid white;
   /* margin: 0 0 0 2vw; */
 }
-a{
-  color:white;
-  text-decoration:none;
+a {
+  color: white;
+  text-decoration: none;
 }
 .Navimg {
   /* background: red; */
@@ -72,13 +105,12 @@ a{
   display: none;
 }
 
-
 @media all and (max-width: 1200px) {
   .navmain {
     display: block;
     width: 100%;
     padding: 0;
-    margin:0;
+    margin: 0;
     padding: 0 0% 0 0%;
     /* background: violet; */
   }
@@ -89,10 +121,10 @@ a{
   }
   .div1 {
     background: black;
-    display:flex;
+    display: flex;
     width: 90%;
     padding: 0 3% 0 7%;
-    margin:0 0 0 0;
+    margin: 0 0 0 0;
   }
   .navmainactive {
     width: 90%;
@@ -101,7 +133,7 @@ a{
   .Navimg {
     width: 6%;
   }
-  
+
   .ul {
     display: none;
   }
@@ -109,14 +141,14 @@ a{
     display: block;
     background: black;
     width: 92%;
-    position:absolute;
+    position: absolute;
     left: 0;
-    top:100%;
+    top: 100%;
     padding: 3vh 0 0 8%;
     height: 99vh;
-    list-style:none;
-    margin:0;
-    z-index:100;
+    list-style: none;
+    margin: 0;
+    z-index: 100;
   }
   li {
     /* font-size:24px; */
@@ -140,7 +172,7 @@ a{
   }
 }
 
-@media screen and (max-width:1036px) and (orientation:portrait){
+@media screen and (max-width: 1036px) and (orientation: portrait) {
   .menu1,
   .menu2 {
     display: block;
@@ -156,13 +188,12 @@ a{
   }
 }
 
-
 @media all and (max-width: 1036px) {
   .navmain {
     display: block;
     width: 100%;
     padding: 0;
-    margin:0;
+    margin: 0;
     padding: 0 0% 0 0%;
     /* background: violet; */
   }
@@ -173,10 +204,10 @@ a{
   }
   .div1 {
     background: black;
-    display:flex;
+    display: flex;
     width: 90%;
     padding: 0 3% 0 7%;
-    margin:0 0 0 0;
+    margin: 0 0 0 0;
   }
   .navmainactive {
     width: 90%;
@@ -192,14 +223,14 @@ a{
     display: block;
     background: black;
     width: 92%;
-    position:absolute;
+    position: absolute;
     left: 0;
-    top:100%;
+    top: 100%;
     padding: 3vh 0 0 8%;
     height: 99vh;
-    list-style:none;
-    margin:0;
-    z-index:100;
+    list-style: none;
+    margin: 0;
+    z-index: 100;
   }
   li {
     /* font-size:24px; */
@@ -231,8 +262,8 @@ a{
   .Navimg {
     width: 10%;
   }
-  .Nh1{
-    font-size:24px;
+  .Nh1 {
+    font-size: 24px;
   }
   .menu1,
   .menu2 {

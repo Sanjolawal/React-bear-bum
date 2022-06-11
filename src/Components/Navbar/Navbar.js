@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [value, setvalue] = useState("block");
+
   let Hh1 = useRef();
   let log1 = useRef();
 
@@ -36,6 +38,32 @@ const Navbar = () => {
 
   return (
     <nav>
+      <span
+        className="remove"
+        style={{ display: value }}
+        onClick={() => {
+          setvalue("none");
+        }}
+      >
+        x
+      </span>
+      <a className="all" href="https://wa.link/ibkf23">
+        <p className="WARNING" style={{ display: value }}>
+          SAY NO TO PLAGIARISM/FRAUD
+          <br />
+          <span className="danger">⚠⚠⚠ </span> ACTUAL DEVELOPER FIVERR USERNAME
+          IS FRONTENDEGR OR CLICK ON THIS
+          <a href="https://wa.link/ibkf23" className="wtcolor">
+            LINK
+          </a>
+          TO CHAT DIRECTLY WITH HIM ON
+          <a href="https://wa.link/ibkf23" className="wtcolor">
+            WHATSAPP{" "}
+          </a>
+          <span className="danger"> ⚠⚠⚠ </span>
+        </p>
+      </a>
+
       <div className={navmain ? "navmainactive" : "navmain"}>
         <div className={Click ? "div1" : "div"}>
           <img src={logo} alt="logo" className="Navimg" />
